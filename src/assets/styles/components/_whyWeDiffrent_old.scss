@@ -1,0 +1,212 @@
+.mfl-wearediff-section {
+  position: relative;
+  .circle-blue {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+  }
+  .circle-green {
+    left: -100px;
+    top: 80%;
+    position: absolute;
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: url("../../images/weare-diff-bg.png") no-repeat;
+    background-position: 98% center;
+    background-size: auto 100%;
+    z-index: -1;
+  }
+  .mfl-wearediff-row {
+    @include align-items-center();
+    .mfl-wearediff-cols {
+      padding-left: 15px;
+      padding-right: 15px;
+      &:first-child {
+        width: 40%;
+      }
+      &:last-child {
+        width: 60%;
+      }
+      .general-content {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .mfl-wearediff-box-wrapper {
+    margin-left: -15px;
+    margin-right: -15px;
+    @include flex();
+    .mfl-wearediff-box-item {
+      width: 50%;
+      padding: 15px;
+      .mfl-wearediff-box-inner {
+        border-radius: 20px;
+        border: 1px solid var(--color-border);
+        padding: 30px 35px;
+        position: relative;
+        min-height: 338px;
+        transition: 0.5s ease;
+        background-color: white;
+        overflow: hidden;
+        &:hover {
+          box-shadow: 7px 1px 27px 0px rgba(108, 108, 108, 0.2);
+          @include transform(scale(1.05));
+          .mfl-wearediff-icon-wrap {
+            .mfl-wearediff-icon {
+              opacity: 0;
+              &.hover {
+                opacity: 1;
+              }
+            }
+          }
+          .mfl-wearediff-box-lines {
+            z-index: -1;
+            .box-line {
+              opacity: 0;
+              &.hover {
+                position: absolute;
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .mfl-wearediff-box-lines {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 60%;
+          .box-line {
+            transition: 0.5s ease;
+            opacity: 1;
+            transform-origin: top right;
+            &.hover {
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mfl-wearediff-box-content {
+    @include font-size(20);
+    max-width: calc(100% - 35px);
+    z-index: 1;
+    position: relative;
+  }
+  .mfl-wearediff-box-image {
+    margin-bottom: 20px;
+    .mfl-wearediff-box-icon {
+      width: 76px;
+    }
+  }
+  .mfl-wearediff-icon-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    .mfl-wearediff-icon {
+      width: 170px;
+      transition: 0.5s ease;
+      &.hover {
+        transition: 0.5s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+  .mfl-wearediff-section .mfl-wearediff-box-wrapper .mfl-wearediff-box-item .mfl-wearediff-box-inner {
+    padding: 20px 22px;
+    min-height: 302px;
+  }
+  .mfl-wearediff-section .mfl-wearediff-box-image .mfl-wearediff-box-icon {
+    width: 62px;
+  }
+  .mfl-wearediff-section .mfl-wearediff-icon-wrap .mfl-wearediff-icon {
+    width: 150px;
+  }
+  .mfl-wearediff-section .circle-green {
+    top: 85%;
+  }
+  .mfl-wearediff-section .circle-blue {
+    right: 14%;
+    bottom: -30px;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .mfl-wearediff-section .mfl-wearediff-row .mfl-wearediff-cols {
+    width: 100% !important;
+  }
+  .mfl-wearediff-section::before {
+    background-position: calc(100% + 100px) bottom;
+    width: 100%;
+    background-size: auto 80%;
+  }
+  .mfl-wearediff-section .mfl-wearediff-box-content {
+    max-width: calc(100% - 115px);
+  }
+}
+@include media-breakpoint-down(850p) {
+  .mfl-wearediff-section .mfl-wearediff-box-content {
+    max-width: calc(100% - 85px);
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .mfl-wearediff-section::before {
+    background: url("../../images/weare-diff-mobile-bg.png") no-repeat;
+    background-size: auto 80%;
+    background-position: calc(100% + 40px) bottom;
+  }
+  .mfl-wearediff-section .mfl-wearediff-row .mfl-wearediff-cols .general-content {
+    padding-right: 0;
+  }
+  .mfl-wearediff-section .mfl-wearediff-box-content {
+    max-width: calc(100% - 35px);
+    font-size: 1.8rem;
+  }
+  .mfl-wearediff-section .mfl-wearediff-box-wrapper .mfl-wearediff-box-item {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .mfl-wearediff-section .mfl-wearediff-row .mfl-wearediff-cols {
+    &:last-child {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  .mfl-wearediff-section .circle-green {
+    top: 35%;
+  }
+  .mfl-wearediff-section .circle-blue {
+    right: 15px;
+    bottom: -30px;
+  }
+  .mfl-wearediff-section .circle-blue {
+    width: 35px;
+    height: 35px;
+  }
+  .mfl-wearediff-section .mfl-wearediff-box-wrapper .mfl-wearediff-box-item .mfl-wearediff-box-inner {
+    box-shadow: 7px 1px 27px 0px rgba(108, 108, 108, 0.2);
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+    .mfl-wearediff-box-lines .box-line.hover,
+    .mfl-wearediff-icon-wrap .mfl-wearediff-icon.hover {
+      opacity: 1 !important;
+    }
+  }
+}

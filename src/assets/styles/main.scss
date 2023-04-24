@@ -1,0 +1,36 @@
+@import "vendors/bootstrap.min";
+@import "utils/variable";
+@import "utils/mixin";
+
+@import "global";
+@import "theme";
+
+// Components
+@import "components/typography";
+@import "components/section";
+@import "components/container";
+@import "components/header";
+@import "components/footer";
+@import "components/button";
+@import "components/spotlight";
+@import "components/whyWeDiffrent";
+@import "components/joinusToday";
+@import "components/ourEmphasis";
+@import "components/features";
+@import "components/research";
+@import "components/contact";
+@import "components/about";
+@import "components/animate";
+@import "components/accoridans";
+@import "components/loader";
+@import "components/joBoalerQuote";
+
+@import "components/spotlightInner";
+
+@import "components/blog-templates.scss";
+@import "components/price.scss";
+
+// // Category Page
+
+@import "pages/homepage";
+@import "pages/privacy-terms";

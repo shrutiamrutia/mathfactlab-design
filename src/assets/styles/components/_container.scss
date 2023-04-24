@@ -1,0 +1,45 @@
+.row {
+  @include flex();
+}
+@include media-breakpoint-between(850p, lg) {
+  .container {
+    width: 820px;
+  }
+}
+// @include media-breakpoint-between(1080p, xl) {
+//   .container {
+//     width: 992px;
+//   }
+// }
+@include media-breakpoint-up(xll) {
+  .container {
+    width: 1280px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@include media-breakpoint-down(xs) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+// @include media-breakpoint-up(1600p) {
+//   .container {
+//     width: 1480px;
+//   }
+// }
+// @include media-breakpoint-up(1750p) {
+//   .container {
+//     width: 1550px;
+//   }
+// }
+// @include media-breakpoint-up(1920p) {
+//   .container {
+//     width: 1640px;
+//   }
+// }

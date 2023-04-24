@@ -1,0 +1,42 @@
+$font-family-lato: "Lato", sans-serif;
+$font-family-crimson-text: "Crimson Text";
+$primary-fonts: $font-family-crimson-text, $font-family-lato, sans-serif;
+
+$color-primary: #2e374d;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$color-primary: #003a7f;
+$color-blue: #2b95f9;
+$color-white: #fff;
+$color-black: #444444;
+
+$grid-breakpoints: (
+  xs: 380px,
+  sm: 576px,
+  md: 768px,
+  850p: 850px,
+  lg: 992px,
+  1080p: 1080px,
+  xl: 1200px,
+  xll: 1400px,
+  1600p: 1600px,
+  1750p: 1750px,
+  1920p: 1920px,
+);
+
+$grid-lower-breakpoints: (
+  xs: 379px,
+  sm: 575px,
+  md: 767px,
+  850p: 849px,
+  lg: 991px,
+  1080p: 1079px,
+  xl: 1199px,
+  xll: 1399px,
+  1600p: 1599px,
+  1750p: 1749px,
+);

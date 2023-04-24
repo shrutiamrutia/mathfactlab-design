@@ -1,0 +1,100 @@
+.mfl-joinustoday-section {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 100px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 77px;
+    @include inline-flex();
+    .circle-green{
+        position: absolute;
+        left: -54px;
+        bottom: 30px;
+    }
+    .circle-blue{
+        position: absolute;
+        top: 25px;
+        right: -26px;
+    }
+    .mfl-joinustoday-content{
+        padding: 56px 100px 56px 0;
+        max-width: 637px;
+        .mfl-joinustoday-title{
+            @include font-size(40);
+            font-weight: $font-weight-bold;
+            margin-bottom: 22px;
+            line-height: normal;
+            color: var(--color-primary-dark);
+        }
+        .mfl-joinustoday-text{
+            @include font-size(24);
+            margin-bottom: 38px;
+        }
+
+    }
+    .mfl-joinustoday-image{
+        position: relative;
+        .joinustoday-image{
+            margin-top: 25px;
+        }
+    }
+}
+@include media-breakpoint-down(xll) {
+    .mfl-joinustoday-section .mfl-joinustoday-content .mfl-joinustoday-text{
+        margin-bottom: 25px;
+    }
+    .mfl-joinustoday-section .mfl-joinustoday-content .mfl-joinustoday-title{
+        margin-bottom: 16px;
+    }
+}
+@include media-breakpoint-down(xl) {
+    .mfl-joinustoday-section{
+        padding: 0 60px;
+        max-width: calc(100% - 100px);    
+        .mfl-joinustoday-content{
+            padding: 30px 50px 30px 0;
+        }
+    }
+    .mfl-joinustoday-section .mfl-joinustoday-image .joinustoday-image {
+        margin-top: 30px;
+    }
+    .mfl-joinustoday-section .mfl-joinustoday-content .mfl-joinustoday-title {
+        margin-bottom: 12px;
+    }
+    .mfl-joinustoday-section .mfl-joinustoday-content .mfl-joinustoday-text {
+        margin-bottom: 20px;
+    }
+    .mfl-joinustoday-section .mfl-joinustoday-content{
+        text-align: left;
+    }
+}
+@include media-breakpoint-down(lg) {
+    .mfl-footer-section .mfl-joinustoday-section {
+        margin-bottom: 40px;
+    }
+}
+@include media-breakpoint-down(850p) {
+    .mfl-joinustoday-section .mfl-joinustoday-image .joinustoday-image{
+        display: none;
+    }
+    .mfl-joinustoday-section .mfl-joinustoday-content {
+        padding: 30px 0;
+    }    
+    .mfl-joinustoday-section .circle-green{
+        left: 20px;
+        bottom: -30px;
+    }
+    .mfl-joinustoday-section .circle-blue{
+        right: -20px;
+    }
+}
+@include media-breakpoint-down(md) {
+    .mfl-joinustoday-section{
+        padding: 0 35px;
+        max-width: 100%;
+        .mfl-joinustoday-content{
+            text-align: center;
+        }
+    }
+    
+}

@@ -1,0 +1,85 @@
+.mfl-OurEmphasis-section {
+  .mfl-OurEmphasis-row {
+    @include align-items-center();
+    .mfl-OurEmphasis-cols {
+      width: 50%;
+      float: left;
+      padding: 0 15px;
+
+      .mfl-OurEmphasis-video-iframe {
+        height: 540px;
+      }
+      .mfl-OurEmphasis-video-mobile-iframe {
+        display: none;
+      }
+      .mfl-OurEmphasis-content {
+        padding-left: 70px;
+        .mfl-OurEmphasis-title {
+          line-height: normal;
+          margin-bottom: 20px;
+        }
+        .mfl-OurEmphasis-text {
+          .emphasis-text {
+            @include font-size(18);
+            margin-bottom: 25px;
+          }
+        }
+      }
+      .mfl-OurEmphasis-Strategy-Based-title {
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .second-row {
+    margin-top: 24px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .mfl-OurEmphasis-section {
+    margin-bottom: -100px;
+  }
+}
+
+@include media-breakpoint-down(1600p) {
+  .mfl-OurEmphasis-section .mfl-OurEmphasis-row .mfl-OurEmphasis-cols .mfl-OurEmphasis-content {
+    padding-left: 50px;
+  }
+}
+
+@include media-breakpoint-down(xll) {
+  .mfl-OurEmphasis-section .mfl-OurEmphasis-row .mfl-OurEmphasis-cols .mfl-OurEmphasis-content {
+    padding-left: 40px;
+  }
+}
+@include media-breakpoint-down(xl) {
+  .mfl-OurEmphasis-section .mfl-OurEmphasis-row .mfl-OurEmphasis-cols .mfl-OurEmphasis-content {
+    padding-left: 30px;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .mfl-OurEmphasis-section .mfl-OurEmphasis-row .mfl-OurEmphasis-cols .mfl-OurEmphasis-content {
+    padding-left: 15px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .mfl-OurEmphasis-section .mfl-OurEmphasis-row .mfl-OurEmphasis-cols {
+    width: 100%;
+    &:last-child {
+      order: -1;
+      margin-bottom: 25px;
+    }
+    .mfl-OurEmphasis-content {
+      padding-left: 0;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .mfl-OurEmphasis-video-iframe {
+    display: none;
+  }
+  .mfl-OurEmphasis-video-mobile-iframe {
+    display: block !important;
+    height: 540px;
+  }
+}

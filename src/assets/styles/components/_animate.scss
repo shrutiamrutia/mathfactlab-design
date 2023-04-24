@@ -1,0 +1,34 @@
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+@keyframes rotating {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+@-webkit-keyframes smoothScroll {
+  0% {
+    top: -20px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+@keyframes smoothScroll {
+  0% {
+    top: -20px;
+  }
+
+  to {
+    top: 0;
+  }
+}

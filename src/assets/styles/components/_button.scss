@@ -1,0 +1,38 @@
+.btn{
+    @include font-size(18);
+    font-weight: $font-weight-semibold;
+    padding: 9px 28px;
+    transition: 0.5s ease;
+    &.lg{
+        @include font-size(24);
+        font-weight: $font-weight-semibold;
+        padding: 12px 38px;
+    }
+    &.btn-primary{
+        background-color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        border-radius: 10px;
+        &:hover{
+            background-color: var(--color-primary-dark);
+            border: 1px solid var(--color-primary-dark);
+        }
+    }
+}
+
+
+
+
+@include media-breakpoint-down(1750p) {
+    .btn {
+        padding: 9px 22px;
+        &.lg{
+            padding: 12px 30px;
+        }
+    }    
+}
+
+@include media-breakpoint-down(md) {
+    .btn.lg{
+        font-size: 1.6rem;
+    }
+}

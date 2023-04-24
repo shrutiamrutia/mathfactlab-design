@@ -1,0 +1,112 @@
+.mfl-wearediff-section {
+  position: relative;
+  .circle-blue {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+  }
+  .circle-green {
+    left: -100px;
+    top: 80%;
+    position: absolute;
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: url("../../images/weare-diff-bg.png") no-repeat;
+    background-position: 98% center;
+    background-size: auto 100%;
+    z-index: -1;
+  }
+  .mfl-wearediff-row {
+    @include align-items-center();
+    .mfl-wearediff-cols {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &:first-child {
+        width: 40%;
+      }
+      &:last-child {
+        width: 60%;
+      }
+      .general-content {
+        padding-right: 30px;
+      }
+      .features-mainimage {
+        // border-radius: 12px;
+        // // border: 1px solid var(--color-green);
+        // box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        // // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      // slider customization shadow
+      .slick-list {
+        border-radius: 12px;
+        // // border: 1px solid var(--color-green);
+        // box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .slick-slide img {
+          display: revert;
+        }
+      }
+      .slick-dots {
+        bottom: -45px;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+  .mfl-wearediff-section .circle-green {
+    top: 85%;
+  }
+  .mfl-wearediff-section .circle-blue {
+    right: 14%;
+    bottom: -30px;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .mfl-wearediff-section .mfl-wearediff-row .mfl-wearediff-cols {
+    width: 100% !important;
+  }
+  .mfl-wearediff-section::before {
+    background-position: calc(100% + 100px) bottom;
+    width: 100%;
+    background-size: auto 80%;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .mfl-wearediff-section::before {
+    background: url("../../images/weare-diff-mobile-bg.png") no-repeat;
+    background-size: auto 80%;
+    background-position: calc(100% + 40px) bottom;
+  }
+  .mfl-wearediff-section .mfl-wearediff-row .mfl-wearediff-cols .general-content {
+    padding-right: 0;
+  }
+
+  .mfl-wearediff-section .mfl-wearediff-row .mfl-wearediff-cols {
+    &:last-child {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  .mfl-wearediff-section .circle-green {
+    top: 35%;
+  }
+  .mfl-wearediff-section .circle-blue {
+    right: 15px;
+    bottom: -30px;
+  }
+  .mfl-wearediff-section .circle-blue {
+    width: 35px;
+    height: 35px;
+  }
+}

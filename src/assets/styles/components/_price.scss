@@ -1,0 +1,1721 @@
+// .price-container-body {
+//   width: 1280px;
+//   height: 912px;
+//   background: #ffffff;
+//   box-shadow: 2px 6px 10px rgba(54, 88, 155, 0.1);
+
+//   .price-container {
+//     box-sizing: border-box;
+
+//     width: 100%;
+//     grid-gap: 10px;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+//   }
+//   .box {
+//     background-color: black;
+//     position: relative;
+//     overflow: hidden;
+//     padding: 100px;
+//     text-align: center;
+
+//     box-sizing: border-box;
+//   }
+// }
+
+.three-columns-grid {
+  width: 1280px;
+  height: 912px;
+  background: #ffffff;
+  box-shadow: 2px 6px 10px rgba(54, 88, 155, 0.1);
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  .price-1 {
+    box-sizing: border-box;
+    // display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // padding: 0px 32px;
+    gap: 24px;
+    width: 426.67px;
+    height: 911px;
+    left: 853.33px;
+    top: 0px;
+    background: #ffffff;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    border-color: #dcdcdc;
+  }
+  .pricing-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 32px 34px;
+    gap: 24px;
+
+    width: 426.67px;
+    height: 431px;
+  }
+  .price-title {
+    width: 289px;
+    height: 29px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #444444;
+  }
+  .teacher-parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 362.67px;
+    height: 326px;
+    border-radius: 18px;
+  }
+  .school-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 362.67px;
+    height: 24px;
+  }
+  .school {
+    width: 60px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #999999;
+  }
+  .teacher-parent {
+    width: 137px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+  .number-of-student-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 253px;
+    height: 85px;
+  }
+  .number-of-student {
+    width: 161px;
+    height: 22px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #444444;
+  }
+  .number-of-years-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 253px;
+    height: 92px;
+  }
+  .number-of-years {
+    width: 133px;
+    height: 22px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .number-of-years-total {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 16px;
+    gap: 10px;
+    width: 253px;
+    height: 53px;
+    background: #f7f7f7;
+    border: 1px solid #adadad;
+    border-radius: 12px;
+  }
+
+  .features-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 77px;
+    background: #b4dffe;
+    border-top: 1px solid #dcdcdc;
+  }
+  .features {
+    width: 289px;
+    height: 29px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #444444;
+  }
+
+  .number-of-Students-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 72px;
+    background: #e6f4ff;
+    border-top: 1px solid #dcdcdc;
+  }
+  .number-of-Students {
+    width: 178px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+  .number-of-teacher-Parent-profiles-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 72px;
+    background: #e6f4ff;
+    border-top: 1px solid #dcdcdc;
+  }
+  .number-of-teacher-Parent-profiles {
+    width: 305px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+  .shared-classes-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 116px;
+    background: #e6f4ff;
+    border-top: 1px solid #dcdcdc;
+  }
+  .shared-classes {
+    width: 362.67px;
+    height: 68px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+  .school-wide-reports-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 72px;
+    background: #e6f4ff;
+    border-top: 1px solid #dcdcdc;
+  }
+  .school-wide-reports {
+    width: 188px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+  .available-student-levels-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 72px;
+    background: #e6f4ff;
+    border-top: 1px solid #dcdcdc;
+  }
+  .available-student-levels {
+    width: 213px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+  }
+  .price-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 24px;
+    width: 426.67px;
+    height: 911px;
+    left: 853.33px;
+    top: 0px;
+    background: #ffffff;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    border-color: #dcdcdc;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+  }
+  .rectangles {
+    width: 426.67px;
+    height: 16px;
+    background: #2b95f9;
+  }
+  .teacher-parent-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 289px;
+    height: 395px;
+  }
+  .teacher-parent-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 289px;
+    height: 185px;
+  }
+
+  .teacher-parent-computer-title {
+    width: 289px;
+    height: 29px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2b95f9;
+  }
+  .teacher-parent-free {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 32px;
+    width: 289px;
+    height: 121px;
+  }
+  .free {
+    width: 289px;
+    height: 67px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 67px;
+    text-align: center;
+    color: #2b95f9;
+  }
+  .until-july {
+    width: 289px;
+    height: 22px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #444444;
+  }
+
+  .sign-up-for-free {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px 17px;
+    gap: 10px;
+    width: 187px;
+    height: 57px;
+    background: #2b95f9;
+    border-radius: 10px;
+  }
+  .sign-up-for-free-title {
+    width: 139px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .account-teacher-parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0px 0px;
+    width: 426.67px;
+    height: 493px;
+  }
+  .account-teacher-parent {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 77px;
+    background: #e6f4ff;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: #dcdcdc;
+  }
+  .unlimited-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 72px;
+    background: #ffffff;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: #dcdcdc;
+  }
+  .account-of-unlimited {
+    width: 289px;
+    height: 22px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #444444;
+  }
+  .account-of-close-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 32px;
+    width: 426.67px;
+    height: 116px;
+    background: #ffffff;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: #dcdcdc;
+  }
+
+  .price-3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 24px;
+    width: 426.67px;
+    height: 911px;
+    left: 853.33px;
+    top: 0px;
+    background: #ffffff;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    border-color: #dcdcdc;
+  }
+  .school-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 289px;
+    height: 398px;
+  }
+  .school-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 289px;
+    height: 185px;
+  }
+  .school-account-title {
+    width: 289px;
+    height: 29px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2dcc89;
+  }
+  .student-year-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 5px;
+    gap: 4px;
+    width: 289px;
+    height: 124px;
+  }
+  .student-year {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 289px;
+    height: 96px;
+  }
+  .student-year-title {
+    width: 289px;
+    height: 67px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 67px;
+    text-align: center;
+    color: #2dcc89;
+  }
+  .student-year-per-title {
+    width: 289px;
+    height: 29px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #444444;
+  }
+  .per-school {
+    width: 289px;
+    height: 19px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #444444;
+  }
+  .summer-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px 17px;
+    gap: 10px;
+    width: 257px;
+    height: 57px;
+    background: #2dcc89;
+    border-radius: 10px;
+  }
+  .summer-button-title {
+    width: 209px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .school-account-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0px 0px;
+    width: 426.67px;
+    height: 489px;
+  }
+  .account-of-unlimited-teacher-profile {
+    width: 346px;
+    height: 22px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #444444;
+  }
+}
+
+// @include media-breakpoint-down(sm) {
+//   .three-columns-grid {
+//     width: 100%;
+//     background: #ffffff;
+//     box-shadow: 2px 6px 10px rgba(54, 88, 155, 0.1);
+//     display: grid;
+//     grid-auto-columns: 1fr;
+//     grid-template-rows: 1fr 1fr 1fr;
+//     .price-1 {
+//       box-sizing: border-box;
+//       // display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 24px 0px 32px;
+//       gap: 24px;
+//       width: 396px;
+//       height: 430px;
+//       background: #ffffff;
+//       border: 1px solid #dcdcdc;
+//     }
+
+//     .price-title {
+//       width: 289px;
+//       height: 24px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 20px;
+//       line-height: 24px;
+//       text-align: center;
+//       color: #444444;
+//     }
+//     .teacher-parent-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px;
+//       gap: 24px;
+//       width: 362.67px;
+//       height: 326px;
+//       border-radius: 18px;
+//     }
+//     .school-title {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 0px;
+//       gap: 16px;
+//       width: 362.67px;
+//       height: 22px;
+//     }
+//     .school {
+//       width: 54px;
+//       height: 22px;
+
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 18px;
+//       line-height: 22px;
+//       color: #999999;
+//     }
+//     .teacher-parent {
+//       width: 124px;
+//       height: 22px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 18px;
+//       line-height: 22px;
+//       color: #444444;
+//     }
+//     .number-of-student-container {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 0px;
+//       gap: 10px;
+//       width: 253px;
+//       height: 82px;
+//     }
+//     .number-of-student {
+//       width: 143px;
+//       height: 19px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 700;
+//       // font-size: 16px;
+//       line-height: 19px;
+//       color: #444444;
+//     }
+//     .number-of-years-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px;
+//       gap: 10px;
+//       width: 253px;
+//       height: 97px;
+//     }
+//     .number-of-years {
+//       width: 118px;
+//       height: 19px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 700;
+//       line-height: 19px;
+//       color: #444444;
+//     }
+//     .number-of-years-total {
+//       box-sizing: border-box;
+//       display: flex;
+//       flex-direction: row;
+//       align-items: flex-end;
+//       padding: 16px;
+//       gap: 10px;
+//       width: 253px;
+//       height: 53px;
+//       background: #f7f7f7;
+//       border: 1px solid #adadad;
+//       border-radius: 12px;
+//     }
+
+//     .price-2 {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px;
+//       width: 396px;
+//       height: 933px;
+//       background: #ffffff;
+//     }
+//     .rectangles {
+//       width: 426.67px;
+//       height: 16px;
+//       background: #2b95f9;
+//     }
+//     .teacher-parent-account-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px 0px 24px;
+//       gap: 16px;
+//       width: 289px;
+//       height: 402px;
+//     }
+//     .teacher-parent-account {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px;
+
+//       width: 289px;
+//       height: 185px;
+//     }
+
+//     .teacher-parent-computer-title {
+//       width: 289px;
+//       height: 29px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 24px;
+//       line-height: 29px;
+//       text-align: center;
+//       color: #2b95f9;
+//     }
+//     .teacher-parent-free {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 0px 0px 24px;
+//       width: 289px;
+//       height: 104px;
+//     }
+//     .free {
+//       width: 289px;
+//       height: 58px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 48px;
+//       line-height: 58px;
+//       text-align: center;
+//       color: #2b95f9;
+//     }
+//     .until-july {
+//       width: 289px;
+//       height: 22px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 18px;
+//       line-height: 22px;
+//       text-align: center;
+//       color: #444444;
+//     }
+
+//     .sign-up-for-free {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 16px 24px 17px;
+//       gap: 10px;
+//       width: 187px;
+//       height: 57px;
+//       background: #2b95f9;
+//       border-radius: 10px;
+//     }
+//     .sign-up-for-free-title {
+//       width: 139px;
+//       height: 24px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 20px;
+//       line-height: 24px;
+//       color: #ffffff;
+//     }
+//     .account-teacher-parent-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 0px;
+//       width: 396px;
+//       height: 515px;
+//     }
+//     .account-teacher-parent {
+//       box-sizing: border-box;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 24px 32px;
+//       gap: 32px;
+//       width: 426.67px;
+//       height: 77px;
+//       background: #e6f4ff;
+//       border-width: 1px 1px 0px 0px;
+//       border-style: solid;
+//       border-color: #dcdcdc;
+//     }
+//     .unlimited-container {
+//       box-sizing: border-box;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 12px 32px;
+//       gap: 32px;
+//       width: 396px;
+//       height: 84px;
+//       background: #ffffff;
+//       border-width: 1px 1px 0px 1px;
+//       border-style: solid;
+//       border-color: #dcdcdc;
+//     }
+//     .account-of-unlimited {
+//       width: 289px;
+//       height: 60px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 18px;
+//       line-height: 30px;
+//       text-align: center;
+//       color: #444444;
+//     }
+//     .account-of-close-container {
+//       box-sizing: border-box;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 12px 16px;
+//       gap: 16px;
+//       width: 396px;
+//       height: 88px;
+//       background: #ffffff;
+//       border-width: 1px 1px 0px 1px;
+//       border-style: solid;
+//       border-color: #dcdcdc;
+//     }
+
+//     .price-3 {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px;
+//       width: 396px;
+//       height: 983px;
+//       background: #ffffff;
+//     }
+//     .school-account-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px 0px 24px;
+//       gap: 16px;
+//       width: 289px;
+//       height: 422px;
+//     }
+//     .school-account {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0px;
+//       width: 289px;
+//       height: 185px;
+//     }
+//     .school-account-title {
+//       width: 289px;
+//       height: 29px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 24px;
+//       line-height: 29px;
+//       text-align: center;
+//       color: #2dcc89;
+//     }
+//     .student-year-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 0px 0px 5px;
+//       gap: 4px;
+//       width: 289px;
+//       height: 124px;
+//     }
+//     .student-year {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 0px;
+//       width: 289px;
+//       height: 96px;
+//     }
+//     .student-year-title {
+//       width: 289px;
+//       height: 67px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 56px;
+//       line-height: 67px;
+//       text-align: center;
+//       color: #2dcc89;
+//     }
+//     .student-year-per-title {
+//       width: 289px;
+//       height: 29px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 24px;
+//       line-height: 29px;
+//       text-align: center;
+//       color: #444444;
+//     }
+//     .per-school {
+//       width: 289px;
+//       height: 19px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 19px;
+//       text-align: center;
+//       color: #444444;
+//     }
+//     .summer-button {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 16px 24px 17px;
+//       gap: 10px;
+//       width: 257px;
+//       height: 57px;
+//       background: #2dcc89;
+//       border-radius: 10px;
+//     }
+//     .summer-button-title {
+//       width: 209px;
+//       height: 24px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 20px;
+//       line-height: 24px;
+//       color: #ffffff;
+//     }
+//     .school-account-box {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 0px;
+//       width: 396px;
+//       height: 545px;
+//     }
+//     .account-of-unlimited-teacher-profile {
+//       width: 346px;
+//       height: 22px;
+//       font-family: "Lato";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 18px;
+//       line-height: 22px;
+//       text-align: center;
+//       color: #444444;
+//     }
+//   }
+// }
+
+.three-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  width: 396px;
+  height: 2365px;
+  left: 16px;
+  top: 146px;
+}
+.two-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 3px;
+  width: 396px;
+  height: 1919px;
+}
+.teacher-parent-account-computer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 396px;
+  height: 933px;
+  background: #ffffff;
+}
+.teacher-parent-account-computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 24px;
+  gap: 16px;
+  width: 289px;
+  height: 402px;
+}
+.teacher-parent-computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 289px;
+  height: 185px;
+}
+.free-until-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 24px;
+  width: 289px;
+  height: 104px;
+}
+.free-until-title {
+  width: 289px;
+  height: 58px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #2b95f9;
+}
+.free-until--july-title {
+  width: 289px;
+  height: 22px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #444444;
+}
+.sign-up-for-free-computer-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px 17px;
+  gap: 10px;
+  width: 187px;
+  height: 57px;
+  background: #2b95f9;
+  border-radius: 10px;
+}
+.sign-up-for-free-computer-button {
+  width: 139px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.feature-box-computer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 396px;
+  height: 515px;
+}
+.feature-box-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 32px;
+  width: 396px;
+  height: 61px;
+  background: #e6f4ff;
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+
+.feature-box-title {
+  width: 289px;
+  height: 29px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #444444;
+}
+.number-of-student-computer-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 32px;
+  width: 396px;
+  height: 84px;
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.number-of-student-computer-title {
+  width: 289px;
+  height: 60px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+}
+.number-of-teacher-parent-computer-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 32px;
+  width: 396px;
+  height: 84px;
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.number-of-teacher-parent-computer-title {
+  width: 289px;
+  height: 60px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  text-align: center;
+
+  color: #444444;
+}
+.shared-class-computer-container {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 16px;
+
+  width: 396px;
+  height: 114px;
+
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.shared-class-computer-title {
+  width: 380px;
+  height: 50px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-align: center;
+
+  color: #444444;
+}
+.school-wide-reports-computer-container {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+
+  width: 396px;
+  height: 88px;
+
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.school-wide-reports-computer-title {
+  width: 364px;
+  height: 24px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+
+  color: #444444;
+}
+.student-available-computer-container {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 32px;
+
+  width: 396px;
+  height: 84px;
+
+  background: #ffffff;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.student-available-computer-title {
+  width: 289px;
+  height: 60px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  text-align: center;
+
+  color: #444444;
+}
+
+.school-account-computer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 396px;
+  height: 983px;
+
+  background: #ffffff;
+}
+.rectangles {
+  width: 396px;
+  height: 16px;
+
+  background: #2dcc89;
+}
+.school-account-computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 24px;
+  gap: 16px;
+
+  width: 289px;
+  height: 422px;
+}
+.school-computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 289px;
+  height: 185px;
+}
+.school-computer-title {
+  width: 289px;
+  height: 29px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #2dcc89;
+}
+.per-student-year-computer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 5px;
+  gap: 4px;
+
+  width: 289px;
+  height: 124px;
+}
+.per-student-year-computer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 289px;
+  height: 96px;
+}
+.per-student-computer-title {
+  width: 289px;
+  height: 67px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 67px;
+  text-align: center;
+
+  color: #2dcc89;
+}
+.per-student-year-computer-title {
+  width: 289px;
+  height: 29px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #444444;
+}
+.maximum-computer-title {
+  width: 289px;
+  height: 19px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #444444;
+}
+.available-computer-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px 17px;
+  gap: 10px;
+  width: 257px;
+  height: 57px;
+  background: #2dcc89;
+  border-radius: 10px;
+}
+
+.available-computer-button {
+  width: 209px;
+  height: 24px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.features-box-computer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 396px;
+  height: 545px;
+}
+.number-student-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 32px;
+  width: 396px;
+  height: 84px;
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.number-student-title {
+  width: 289px;
+  height: 60px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+}
+.number-of-student-profile-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 32px;
+  width: 396px;
+  height: 114px;
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.number-of-student-profile-title {
+  width: 289px;
+  height: 90px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+}
+.shared-classes-box-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 16px;
+  width: 396px;
+  height: 114px;
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.shared-classes-box-title {
+  width: 380px;
+  height: 50px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+}
+.school-wide-box-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+  width: 396px;
+  height: 88px;
+  background: #ffffff;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #dcdcdc;
+}
+.school-wide-box-title {
+  width: 364px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+}
+.all-student-box-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 32px;
+  width: 396px;
+  height: 84px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+}
+
+.all-student-box-title {
+  width: 289px;
+  height: 60px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+}
+.pricing-calculator-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0px 32px;
+  gap: 24px;
+  width: 396px;
+  height: 430px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+}
+.react {
+  display: none;
+  width: 396px;
+  height: 16px;
+  background: #afafaf;
+}
+.pricing-calculator-computer-title {
+  width: 289px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+}
+.teacher-parent-total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 362.67px;
+  height: 326px;
+  border-radius: 18px;
+}
+.teacher-parent-school-computer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 362.67px;
+  height: 22px;
+}
+.school-box-title {
+  width: 54px;
+  height: 22px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999999;
+}
+.teacher-box-title {
+  width: 124px;
+  height: 22px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #444444;
+}
+.number-of-student-box-1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 253px;
+  height: 82px;
+}
+.number-of-student-box-1-title {
+  width: 143px;
+  height: 19px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #444444;
+}
+.number-of-student-box-2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 253px;
+  height: 97px;
+}
+.number-of-student-box-2-title {
+  width: 118px;
+  height: 19px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.table-element-box-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 16px;
+  gap: 10px;
+  width: 253px;
+  height: 53px;
+  background: #f7f7f7;
+  border: 1px solid #adadad;
+  border-radius: 12px;
+}
+.total-title-1 {
+  width: 167px;
+  height: 21px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #444444;
+}
+
+.total-title-2 {
+  width: 44px;
+  height: 21px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #444444;
+}

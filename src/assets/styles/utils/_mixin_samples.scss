@@ -1,0 +1,63 @@
+@import "mixins";
+
+@include media-breakpoint-up(xs);
+@include media-breakpoint-up(sm);
+@include media-breakpoint-up(md);
+@include media-breakpoint-up(lg);
+@include media-breakpoint-up(xl);
+@include media-breakpoint-up(xll);
+@include media-breakpoint-up(1600p);
+@include media-breakpoint-up(1920px);
+
+@include media-breakpoint-down(xs);
+@include media-breakpoint-down(sm);
+@include media-breakpoint-down(md);
+@include media-breakpoint-down(lg);
+@include media-breakpoint-down(xl);
+@include media-breakpoint-down(xll);
+@include media-breakpoint-down(1600p);
+@include media-breakpoint-down(1920px);
+
+@include media-breakpoint-between(xs, sm);
+@include media-breakpoint-between(sm, md);
+@include media-breakpoint-between(md, lg);
+@include media-breakpoint-between(lg, xl);
+@include media-breakpoint-between(xl, xll);
+@include media-breakpoint-between(xll, 1600p);
+@include media-breakpoint-between(1600p, 1920p);
+
+@include border-radius(4px);
+
+@include box-shadow("0 0 0 #f5f5f5");
+
+@include transition(all 0.35s ease);
+
+@include flex();
+@include inline-flex();
+@include flex-column();
+@include flex-column-nowrap();
+@include flex-with-nowrap();
+@include flex-grow-1();
+@include justify-content-center();
+@include justify-content-end();
+@include justify-content-start();
+@include justify-content-between();
+@include justify-content-space-between();
+@include align-items-center();
+@include align-content-center();
+@include align-items-end();
+@include align-items-start();
+
+@include heading(h1);
+@include heading(h2);
+@include heading(h3);
+@include heading(h4);
+@include heading(h5);
+@include heading(h6);
+
+@include font-size(12);
+@include font-size(14);
+@include font-size(16);
+@include font-size(18);
+
+@include line-height(12);

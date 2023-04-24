@@ -1,0 +1,221 @@
+.mfl-Features-section {
+  background-image: url("../../images/why-bg.png");
+  background-position: center center;
+  background-size: 100% 1060px;
+  @include inline-flex();
+  height: 1060px;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  .circle-blue {
+    position: absolute;
+    left: 34%;
+    bottom: 7%;
+  }
+  .circle-green {
+    position: absolute;
+    right: 17%;
+    top: 16%;
+  }
+
+  .mfl-Features-row {
+    @include align-items-center();
+    padding-top: 10%;
+    &.mobile-wrapper {
+      display: none;
+    }
+    .mfl-Features-cols {
+      .features-mainimage {
+        border-radius: 12px;
+      }
+      &:first-child {
+        width: 45%;
+        padding-right: 50px;
+      }
+      &:last-child {
+        width: 55%;
+      }
+      .feature-slider {
+        .slick-dots {
+          bottom: -42px;
+        }
+      }
+      .mfl-Features-wrap {
+        margin-top: 20px;
+        .mfl-Features-item {
+          pointer-events: none;
+          padding: 8px 30px 8px 10px;
+          border-radius: 20px;
+          margin-bottom: 5px;
+          @include transition(0.5s ease);
+          .mfl-Features-inner {
+            @include inline-flex();
+            color: var(--color-white);
+            cursor: pointer;
+            .mfl-Features-image {
+              height: 120px;
+              width: 120px;
+              min-width: 120px;
+              border-radius: 50%;
+              border: 7.5px solid var(--color-feture-border);
+              .mfl-Features-img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                @include inline-flex();
+                @include justify-content-center();
+                background-color: var(--color-feture-bg);
+                border: 3px solid var(--color-white);
+                @include transition(0.5s ease);
+                .mask-Features {
+                  width: 50%;
+                  height: 50%;
+                  background-color: var(--color-white);
+                  @include transition(0.5s ease);
+                }
+              }
+            }
+            .mfl-Features-content {
+              padding-left: 33px;
+              @include font-size(20);
+            }
+          }
+          &.selected {
+            background-color: var(--color-primary-light) !important;
+            .mfl-Features-inner {
+              color: var(--color-secondary);
+            }
+            .mfl-Features-inner {
+              .mfl-Features-image {
+                .mfl-Features-img {
+                  background-color: var(--color-white);
+                  .mask-Features {
+                    background-color: var(--color-circle-icon);
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            background-color: #94e5fc2b;
+          }
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-down(1920p) {
+  .mfl-Features-section {
+    background-size: auto 1060px;
+  }
+}
+
+@include media-breakpoint-down(1600p) {
+}
+@include media-breakpoint-down(xll) {
+  .mfl-Features-section .mfl-Features-row .mfl-Features-cols:first-child {
+    padding-right: 20px;
+  }
+  .mfl-Features-section .mfl-Features-row .mfl-Features-cols .mfl-Features-wrap .mfl-Features-item .mfl-Features-inner {
+    .mfl-Features-content {
+      padding-left: 22px;
+    }
+    .mfl-Features-image {
+      height: 90px;
+      width: 90px;
+      min-width: 90px;
+      border: 6px solid var(--color-feture-border);
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+}
+@include media-breakpoint-down(lg) {
+  .mfl-Features-section {
+    background-image: url("../../images/why-mobile-bg.png");
+    background-position: center top;
+    height: auto;
+    .circle-green {
+      position: absolute;
+      right: 8%;
+      top: -40px;
+    }
+    .circle-blue {
+      position: absolute;
+      left: 3.5%;
+      bottom: -20px;
+    }
+    .mfl-Features-row {
+      padding: 5% 0;
+    }
+  }
+  .mfl-Features-section .mfl-Features-row .mfl-Features-cols .mfl-Features-wrap .mfl-Features-item .mfl-Features-inner {
+    .mfl-Features-content {
+      padding-left: 15px;
+    }
+    .mfl-Features-image {
+      height: 70px;
+      width: 70px;
+      min-width: 70px;
+      border: 4px solid var(--color-feture-border);
+    }
+  }
+  .mfl-Features-section .mfl-Features-row .mfl-Features-cols {
+    width: 50% !important;
+  }
+  .mfl-Features-section .mfl-Features-row .mfl-Features-cols .mfl-Features-wrap .mfl-Features-item {
+    padding: 8px 18px 8px 10px;
+  }
+}
+@include media-breakpoint-down(850p) {
+  .mfl-Features-section {
+    background-size: cover;
+    .size-108 {
+      width: 65px;
+      height: 65px;
+    }
+  }
+  .mfl-Features-section .mfl-Features-row {
+    padding: 0;
+  }
+  .mfl-Features-section .mfl-Features-row.desktop-wrapper {
+    display: none;
+  }
+  .mfl-Features-section .mfl-Features-row .mfl-Features-cols .mfl-Features-wrap {
+    margin-top: 0;
+  }
+  .mfl-Features-section .mfl-Features-row.mobile-wrapper {
+    @include flex();
+    .mfl-Features-cols .mfl-Features-wrap {
+      max-width: 300px;
+    }
+    .mfl-Features-cols .mfl-Features-wrap .mfl-Features-item {
+      padding: 8px 0;
+      .mfl-Features-inner {
+        margin-bottom: 10px;
+      }
+      &.selected,
+      &:hover {
+        background-color: transparent;
+        .mfl-Features-inner {
+          .mfl-Features-image .mfl-Features-img {
+            background-color: var(--color-feture-bg);
+            .mask-Features {
+              background-color: var(--color-white);
+            }
+          }
+          .mfl-Features-content {
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+    .mfl-Features-cols {
+      width: 100% !important;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+  }
+}

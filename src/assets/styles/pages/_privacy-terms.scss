@@ -1,0 +1,51 @@
+.contentWrapper {
+  .section-title {
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    @include media-breakpoint-down(xll) {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+  }
+  .ml-24 {
+    margin-left: 24px;
+  }
+
+  .mfl-accordions-answer {
+    overflow: hidden;
+    padding-left: 54px;
+    font-size: 2rem;
+    padding-top: 0;
+
+    @include transition(all 0.25s ease);
+
+    .mfl-bullet-item {
+      margin-bottom: 30px;
+      padding-left: 35px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--color-white);
+        border: 2px solid var(--color-green);
+        top: 8px;
+      }
+    }
+
+    .mfl-bullet-list {
+      .mfl-bullet-list-item {
+        margin-bottom: 15px;
+        padding-left: 30px;
+        position: relative;
+      }
+    }
+  }
+  .sub-item-list {
+    padding-left: 140px;
+  }
+}
